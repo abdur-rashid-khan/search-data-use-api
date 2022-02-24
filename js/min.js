@@ -4,7 +4,6 @@ searchBtn.addEventListener('click',()=>{
    if(searchInput==''){
       document.getElementById('alert').style.display='block';
       document.getElementById('content').style.display='none';
-      location.replace('index.html');
    }else{
       document.getElementById('content').style.display='block';
       document.getElementById('alert').style.display='none';
@@ -53,7 +52,6 @@ const displayData=(data)=>{
    } catch (error) {
       document.getElementById('alert').style.display='block';
       document.getElementById('content').style.display='none';
-      location.replace('index.html');
    };
 }
 const showDetels= async (id) =>{
