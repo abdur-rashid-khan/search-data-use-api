@@ -3,7 +3,9 @@ searchBtn.addEventListener('click',()=>{
    const searchInput=document.getElementById('searchInput').value;
    if(searchInput==''){
       document.getElementById('alert').style.display='block';
+      document.getElementById('content').style.display='none';
    }else{
+      document.getElementById('content').style.display='block';
       document.getElementById('alert').style.display='none';
       const url=`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`;
       fetch(url)
@@ -49,6 +51,7 @@ const displayData=(data)=>{
       })
    } catch (error) {
       document.getElementById('alert').style.display='block';
+      document.getElementById('content').style.display='none';
    };
 }
 const showDetels= async (id) =>{
