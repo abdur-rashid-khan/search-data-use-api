@@ -85,3 +85,7 @@ const showIdData = (showNewData) => {
       
    });
 }
+
+const loding =()=>{
+   document.getElementById('secction').style.display='none';
+}

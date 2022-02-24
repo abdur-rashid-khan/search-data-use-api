@@ -18,3 +18,15 @@ body{
       width: 100%;
    }
 }
+#secction{
+   background-image: url('../img/loder.gif');
+   width: 100%;
+   height: 100vh;
+   z-index: 111;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
